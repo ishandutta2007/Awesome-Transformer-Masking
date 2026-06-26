@@ -1,11 +1,29 @@
-# Awesome-Transformer-Masking
-## Transformer Masking: Evolution, Variants, Types, & Applications
+<!-- SEO Meta Tags -->
+<meta name="description" content="A curated overview of Transformer attention masking techniques: chronological evolution, functional variants, context sparsification, multi-modal layout masking, and hardware fusion solutions." />
+<meta name="keywords" content="Transformer Masking, Causal Masking, Padding Masking, MLM, FlashAttention, Attention Sink, Deep Learning, NLP, Awesome List" />
+
+# 🌟 Awesome Transformer Masking
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Transformer Masking Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Transformer-Masking/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Transformer-Masking?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Transformer-Masking/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Transformer-Masking?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Transformer-Masking/pulls"><img src="https://img.shields.io/github/issues-pr/ishandutta2007/Awesome-Transformer-Masking?style=flat-square" alt="Pull Requests"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+## 🚀 Transformer Masking: Evolution, Variants, Types, & Applications
 
 Transformer Masking is a core architectural mechanism that controls information flow within Self-Attention blocks. Because the Transformer's native attention layer processes all sequence elements simultaneously and in parallel, it lacks inherent awareness of chronology or structure. Masking solves this by dynamically overriding the pre-softmax attention score matrix ($QK^T / \sqrt{d_k}$), replacing selected indices with absolute negative infinity ($-\infty$). When the Softmax operation is applied, these masked positions drop to an operational probability of exactly zero, allowing developers to enforce causality, ignore padding noise, compress context windows, and structure multimodal alignment fields.
 
 ---
 
-## 1. The Chronological Evolution
+## 📅 1. The Chronological Evolution
 
 The technical implementation of attention masking has transitioned from simple sequence-truncation buffers to structured layout constraints, moving toward hardware-fused, token-evicting dynamic execution blocks.
 
@@ -24,7 +42,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Structural Variants
+## 🔧 2. Core Functional & Structural Variants
 
 Transformer masking types are strictly categorized based on their geometric layout and their explicit goal within the deep learning workflow.
 
@@ -37,7 +55,7 @@ Transformer masking types are strictly categorized based on their geometric layo
 
 ---
 
-## 3. Advanced Context Extrapolation & Sparsification Types
+## 🧠 3. Advanced Context Extrapolation & Sparsification Types
 
 As enterprise operations require scaling models to long context boundaries, specialized masking strategies prune the attention grid to balance processing speed with memory limitations.
 
@@ -49,7 +67,7 @@ As enterprise operations require scaling models to long context boundaries, spec
 
 ---
 
-## 4. Multi-Modal & Cross-Attention Layout Variants
+## 🎨 4. Multi-Modal & Cross-Attention Layout Variants
 
 When Transformers scale up to process multiple intersecting modalities (e.g., text, vision, audio), specialized masking matrices manage the cross-sensory dependencies.
 
@@ -60,7 +78,7 @@ When Transformers scale up to process multiple intersecting modalities (e.g., te
 
 ---
 
-## 5. Production Engineering Challenges & Hardware Solutions
+## ⚡ 5. Production Engineering Challenges & Hardware Solutions
 
 | Challenge | Description & Mitigation | Year | First Used Paper / Hardware Solution |
 | :--- | :--- | :---: | :--- |
@@ -69,7 +87,7 @@ When Transformers scale up to process multiple intersecting modalities (e.g., te
 
 ---
 
-## 6. Real-World AI Infrastructure Applications
+## 🌐 6. Real-World AI Infrastructure Applications
 
 | Application Area | Application Details | Year | First Used Paper |
 | :--- | :--- | :---: | :--- |
