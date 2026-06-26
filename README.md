@@ -94,3 +94,14 @@ When Transformers scale up to process multiple intersecting modalities (e.g., te
 | [**High-Throughput Batch Inference Serving (vLLM / TensorRT-LLM)**](docs/batch_inference_serving.md) | *Application:* Implements document-packed block-diagonal masks natively. This allows enterprise serving clusters to process thousands of multi-turn user queries simultaneously inside a single batched memory block without cross-query context contamination. | 2023 | [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) |
 | [**Unified Multi-Modal Omni Conversational Engines**](docs/multimodal_conversational_engines.md) | *Application:* Manages synchronized streaming audio, video, and text layouts concurrently. Interleaved multi-modal masks guarantee that the generative speech path reacts dynamically to live pixel coordinate shifts while keeping temporal generation paths strictly causal. | 2024 | [GPT-4o System Card](https://arxiv.org/abs/2410.21276) |
 | [**Long-Context Software Repository Auditing**](docs/software_repository_auditing.md) | *Application:* Processes full, multi-directory developer codebases. Block-sparse and structural syntax masking protect functional boundaries (e.g., preventing variable lookups from jumping across isolated code classes), keeping the model's structural code summaries stable. | 2023 | [RepoCoder: Repository-Level Code Completion Through Iterative Retrieval and Generation](https://arxiv.org/abs/2303.12570) |
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Transformer-Masking&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Transformer-Masking&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Transformer-Masking&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Transformer-Masking&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
