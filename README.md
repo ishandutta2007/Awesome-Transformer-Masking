@@ -9,8 +9,12 @@ Transformer Masking is a core architectural mechanism that controls information 
 
 The technical implementation of attention masking has transitioned from simple sequence-truncation buffers to structured layout constraints, moving toward hardware-fused, token-evicting dynamic execution blocks.
 
-[Padding & Causal Masking (2017)] ----> [Prefix & Block Sparsity (2020)] ----> [Hardware-Fused & Rolling Masks (2023+)](Static Array Sequence Bounds)           (Interleaved Task Adaptations)            (SRAM Tiling & Memory Token Eviction)
-
+```mermaid
+flowchart LR
+    A["Padding & Causal Masking (2017)<br/>(Static Array Sequence Bounds)"]
+    --> B["Prefix & Block Sparsity (2020)<br/>(Interleaved Task Adaptations)"]
+    --> C["Hardware-Fused & Rolling Masks (2023+)<br/>(SRAM Tiling & Memory Token Eviction)"]
+```
 
 *   **The Foundation Era (Vaswani et al., 2017)**
     *   *Concept:* Introduced the two baseline masking types: **Padding Masks** (to prevent the model from spending compute cycles reading empty padding zeroes at the end of short sentences) and **Causal Masks** (a rigid lower-triangular matrix that forces generative models to look only at past tokens).
